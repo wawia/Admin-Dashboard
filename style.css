@@ -1,0 +1,238 @@
+:root{
+    --main-blue-color: #0891b2;
+    --main-gray-color: #e0fff1;
+}
+
+
+body{
+    height: 100vh;
+    font-family: sans-serif;
+    margin: 0px;
+    display: grid;
+    grid-template: 150px 1fr / 350px 1fr;
+}
+
+
+
+.searchbar{
+    display: grid;
+    grid-template-columns: 1fr 80px 80px 150px;
+    place-items: center;
+    padding: 8px;
+}
+.searchbar>div{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.indexSearch{
+    background-color: var(--main-gray-color);
+    border: 0px;
+    height: 28px;
+    flex: 1 1 0%;
+    max-width: 700px;
+    min-width: 300px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 20px;
+    font-size: 20px;
+}
+.indexSearch:focus{
+    outline: none;
+    box-shadow: 0px 0px 5px var(--main-blue-color);
+}
+
+.profilepic{
+    border-radius: 50%;
+}
+.titlebarpic{
+    height: 50px;
+}
+.icon{
+    height: 50px;
+}
+
+.searchbar>h1{
+    font-size: 20px;
+}
+
+.profile{
+    padding: 8px;
+    display: grid;
+    grid-template-columns: 1fr 150px 150px 150px;
+}
+
+.profileInfo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: 100%; */
+    justify-self: start;
+}
+.profileInfo>div>p{
+    font-size: 10px;
+    font-weight: bolder;
+    margin-bottom: 0px;
+}
+.profileInfo>div>h1{
+    font-size: 20px;
+    margin-top: 0px;
+}
+
+.profile>button{
+    height: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: var(--main-blue-color);
+    color: white;
+    font-size: 15px;
+    font-weight: bolder;
+    border-radius: 25px;
+    border-color: var(--main-blue-color);
+}
+
+
+.underbarpic{
+    height: 55px;
+    margin: 5px;
+    margin-right: 15px;
+}
+
+
+
+nav{
+    background-color: var(--main-blue-color);
+    grid-row: 1/3;
+    color: white;
+}
+nav>div{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    font-size: 25px;
+}
+nav img{
+    height: 80px;
+}
+
+nav>ul{
+    list-style-type: none;
+    margin-bottom: 80px;
+}
+
+nav li{
+    font-weight: bolder;
+    font-size: 25px;
+    margin: 15px;
+}
+
+
+
+
+
+main{
+    background-color: var(--main-gray-color);
+    padding: 15px;
+    display: grid;
+    grid-template-columns: 2.5fr 1fr;
+}
+main .title{
+    font-weight: bolder;
+    font-size: 18px;
+}
+.textInMain{
+    opacity: 70%;
+}
+
+.mainContent{
+    display: grid;
+    grid-template: 50px repeat(2, 1fr)/ repeat(2, 1fr);
+}
+
+
+.mainBox{
+    height: 200px;
+    min-width: 300px;
+    max-width: 90%;
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px rgb(0, 0, 0, 30%);
+    border-left: 8px orange solid;
+    position: relative;
+}
+
+.mainBoxIcons{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+.mainBoxIcons>img{
+    height: 40px;
+}
+
+.mainText{
+    padding-left: 15px;
+    font-size: 20px;
+    grid-column: 1/3;
+}
+
+.Trending{
+    display: grid;
+    grid-template-rows: 50px 1fr 50px ;
+}
+
+.Trending h1{
+    font-size: 20px;
+    margin: 15px;
+}
+
+.trendingBox{
+    height: fit-content;
+    min-width: 200px;
+    max-width: 90%;
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px rgb(0, 0, 0, 30%);
+}
+
+.trendingBox p{
+    font-size: 14px;
+    opacity: 70%;
+}
+.trendingBox .titleSide{
+    font-weight: bolder;
+    opacity: 100%;
+    /* margin-left: 10px; */
+}
+.idontevenknow{
+    border-bottom: 1px solid black; 
+}
+
+
+
+.profiletren{
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+
+.profiletren>img{
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.profiletren h1{
+    font-size: 18px;
+    margin: 10px;
+}
+
+.profiletren .userdesc{
+    opacity: 60%;
+    font-size: 13px;
+}
